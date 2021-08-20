@@ -44,13 +44,17 @@
       "type": "string",
       "description": "Name to identify the environment"
     },
-    "features": {
+     "features": {
       "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_]": { "type": "string" }
+      "properties": {
+        "???": {
+          "pattern": "^[a-zA-Z_]",
+          "type": "string",
+          "description": "???"
+        }
       }
     },
-    "prebidVersion:": {
+    "prebidVersion": {
       "type": "string",
       "description": "Name to identify the version of Prebid.js"
     },
